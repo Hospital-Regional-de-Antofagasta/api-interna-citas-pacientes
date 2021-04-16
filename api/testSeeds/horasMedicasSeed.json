@@ -1,0 +1,29 @@
+[
+    {
+        "CorrelativoHora": 1,
+        "NombreLugar": "NombreLugar 1",
+        "NombreServicio": "NombreServicio 1",
+        "NombreProfesional": "NombreProfesional 1",
+        "FechaCitacion": "2021-06-30T11:38:13.570Z",
+        "HoraCitacion": "11:30",
+        "NumeroPaciente": 17
+    },
+    {
+        "CorrelativoHora": 2,
+        "NombreLugar": "NombreLugar 2",
+        "NombreServicio": "NombreServicio 2",
+        "NombreProfesional": "NombreProfesional 2",
+        "FechaCitacion": "2021-07-30T11:38:13.570Z",
+        "HoraCitacion": "12:30",
+        "NumeroPaciente": 18
+    },
+    {
+        "CorrelativoHora": 3,
+        "NombreLugar": "NombreLugar 3",
+        "NombreServicio": "NombreServicio 3",
+        "NombreProfesional": "NombreProfesional 3",
+        "FechaCitacion": "2021-08-30T11:38:13.570Z",
+        "HoraCitacion": "13:30",
+        "NumeroPaciente": 19
+    }
+]
