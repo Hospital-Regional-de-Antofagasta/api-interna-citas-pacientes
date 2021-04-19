@@ -13,6 +13,6 @@ const HoraMedica = mongoose.model('horas_medica', new Schema ({
     FechaCitacion: Date,
     HoraCitacion: String,
     NumeroPaciente: Number,
-}))
+}, { timestamps: true }))
 
 module.exports = HoraMedica
