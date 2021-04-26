@@ -1,6 +1,6 @@
 [
     {
-        "CorrelativoHora": 1,
+        "CorrelativoCita": 1,
         "NombreLugar": "NombreLugar 1",
         "NombreServicio": "NombreServicio 1",
         "NombreProfesional": "NombreProfesional 1",
@@ -10,7 +10,7 @@
         "CodigoAmbito": "01"
     },
     {
-        "CorrelativoHora": 2,
+        "CorrelativoCita": 2,
         "NombreLugar": "NombreLugar 2",
         "NombreServicio": "NombreServicio 2",
         "NombreProfesional": "NombreProfesional 2",
@@ -20,7 +20,7 @@
         "CodigoAmbito": "04"
     },
     {
-        "CorrelativoHora": 3,
+        "CorrelativoCita": 3,
         "NombreLugar": "NombreLugar 3",
         "NombreServicio": "NombreServicio 3",
         "NombreProfesional": "NombreProfesional 3",
