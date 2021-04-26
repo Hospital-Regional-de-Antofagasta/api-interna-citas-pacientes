@@ -1,5 +1,5 @@
 {
-  "name": "api-hradb-a-mongodb-horas-medicas",
+  "name": "api-hradb-a-mongodb-citas-pacientes",
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get your application up and running.",
   "main": "index.js",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://pafonbu@bitbucket.org/DesarrolloHRA/api-hradb-a-mongodb-horas-medicas.git"
+    "url": "git+https://pafonbu@bitbucket.org/DesarrolloHRA/api-hradb-a-mongodb-citas-pacientes.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/DesarrolloHRA/api-hradb-a-mongodb-horas-medicas#readme",
+  "homepage": "https://bitbucket.org/DesarrolloHRA/api-hradb-a-mongodb-citas-pacientes#readme",
   "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",

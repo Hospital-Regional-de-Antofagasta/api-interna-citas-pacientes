@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const HoraMedica = mongoose.model('horas_medica', new Schema ({
-    CorrelativoHora: {
+const CitasPacientes = mongoose.model('citas_paciente', new Schema ({
+    CorrelativoCita: {
         type: Number,
         require: true,
         unique: true,
@@ -13,6 +13,7 @@ const HoraMedica = mongoose.model('horas_medica', new Schema ({
     FechaCitacion: Date,
     HoraCitacion: String,
     NumeroPaciente: Number,
+    CodigoAmbito: String,
 }, { timestamps: true }))
 
-module.exports = HoraMedica
+module.exports = CitasPacientes
