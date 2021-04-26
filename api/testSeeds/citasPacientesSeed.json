@@ -6,7 +6,8 @@
         "NombreProfesional": "NombreProfesional 1",
         "FechaCitacion": "2021-06-30T11:38:13.570Z",
         "HoraCitacion": "11:30",
-        "NumeroPaciente": 17
+        "NumeroPaciente": 17,
+        "CodigoAmbito": "01"
     },
     {
         "CorrelativoHora": 2,
@@ -15,7 +16,8 @@
         "NombreProfesional": "NombreProfesional 2",
         "FechaCitacion": "2021-07-30T11:38:13.570Z",
         "HoraCitacion": "12:30",
-        "NumeroPaciente": 18
+        "NumeroPaciente": 18,
+        "CodigoAmbito": "04"
     },
     {
         "CorrelativoHora": 3,
@@ -24,6 +26,7 @@
         "NombreProfesional": "NombreProfesional 3",
         "FechaCitacion": "2021-08-30T11:38:13.570Z",
         "HoraCitacion": "13:30",
-        "NumeroPaciente": 19
+        "NumeroPaciente": 19,
+        "CodigoAmbito": "06"
     }
 ]
