@@ -20,14 +20,14 @@ afterEach(async () => {
 })
 
 const citaPacienteGuardar = {
-    CorrelativoCita: 11,
-    NombreLugar: 'NombreLugar',
-    NombreServicio: 'NombreServicio',
-    NombreProfesional: 'NombreProfesional',
-    FechaCitacion: '2021-10-30',
-    HoraCitacion: '10:30',
-    NumeroPaciente: 16,
-    CodigoAmbito: '01'
+    correlativoCita: 11,
+    nombreLugar: 'nombreLugar',
+    nombreServicio: 'nombreServicio',
+    nombreProfesional: 'nombreProfesional',
+    fechaCitacion: '2021-10-30',
+    horaCitacion: '10:30',
+    numeroPaciente: 16,
+    codigoAmbito: '01'
 }
 
 describe('Endpoints citas pacientes', () => {
@@ -35,7 +35,7 @@ describe('Endpoints citas pacientes', () => {
         it('Should not get last cita paciente', async (done) => {
             const response = await request.get('/hra/hradb_a_mongodb/citas_pacientes/ultimo')
                 .set('Authorization', 'no-token')
-            expect(response.status).toBe(403)
+            expect(response.status).toBe(401)
 
             done()
         })
@@ -53,14 +53,14 @@ describe('Endpoints citas pacientes', () => {
             const response = await request.get('/hra/hradb_a_mongodb/citas_pacientes/ultimo')
                 .set('Authorization', token)
             expect(response.status).toBe(200)
-            expect(response.body.CorrelativoCita).toBe(citaPacienteGuardar.CorrelativoCita)
-            expect(response.body.NombreLugar).toBe(citaPacienteGuardar.NombreLugar)
-            expect(response.body.NombreServicio).toBe(citaPacienteGuardar.NombreServicio)
-            expect(response.body.NombreProfesional).toBe(citaPacienteGuardar.NombreProfesional)
-            expect(Date.parse(response.body.FechaCitacion)).toBe(Date.parse(citaPacienteGuardar.FechaCitacion))
-            expect(response.body.HoraCitacion).toBe(citaPacienteGuardar.HoraCitacion)
-            expect(response.body.NumeroPaciente).toBe(citaPacienteGuardar.NumeroPaciente)
-            expect(response.body.CodigoAmbito).toBe(citaPacienteGuardar.CodigoAmbito)
+            expect(response.body.correlativoCita).toBe(citaPacienteGuardar.correlativoCita)
+            expect(response.body.nombreLugar).toBe(citaPacienteGuardar.nombreLugar)
+            expect(response.body.nombreServicio).toBe(citaPacienteGuardar.nombreServicio)
+            expect(response.body.nombreProfesional).toBe(citaPacienteGuardar.nombreProfesional)
+            expect(Date.parse(response.body.fechaCitacion)).toBe(Date.parse(citaPacienteGuardar.fechaCitacion))
+            expect(response.body.horaCitacion).toBe(citaPacienteGuardar.horaCitacion)
+            expect(response.body.numeroPaciente).toBe(citaPacienteGuardar.numeroPaciente)
+            expect(response.body.codigoAmbito).toBe(citaPacienteGuardar.codigoAmbito)
 
             done()
         })
@@ -70,8 +70,8 @@ describe('Endpoints citas pacientes', () => {
             const response = await request.post('/hra/hradb_a_mongodb/citas_pacientes/')
                 .set('Authorization', 'no-token')
                 .send(citaPacienteGuardar)
-            const citaPacienteObtenida = await CitasPacientes.findOne({ CorrelativoCita: citaPacienteGuardar.CorrelativoCita })
-            expect(response.status).toBe(403)
+            const citaPacienteObtenida = await CitasPacientes.findOne({ correlativoCita: citaPacienteGuardar.correlativoCita })
+            expect(response.status).toBe(401)
             expect(citaPacienteObtenida).toBeFalsy()
 
             done()
@@ -80,16 +80,16 @@ describe('Endpoints citas pacientes', () => {
             const response = await request.post('/hra/hradb_a_mongodb/citas_pacientes/')
                 .set('Authorization', token)
                 .send(citaPacienteGuardar)
-            const citaPacienteObtenida = await CitasPacientes.findOne({ CorrelativoCita: citaPacienteGuardar.CorrelativoCita })
+            const citaPacienteObtenida = await CitasPacientes.findOne({ correlativoCita: citaPacienteGuardar.correlativoCita })
             expect(response.status).toBe(201)
-            expect(citaPacienteObtenida.CorrelativoCita).toBe(citaPacienteGuardar.CorrelativoCita)
-            expect(citaPacienteObtenida.NombreLugar).toBe(citaPacienteGuardar.NombreLugar)
-            expect(citaPacienteObtenida.NombreServicio).toBe(citaPacienteGuardar.NombreServicio)
-            expect(citaPacienteObtenida.NombreProfesional).toBe(citaPacienteGuardar.NombreProfesional)
-            expect(Date.parse(citaPacienteObtenida.FechaCitacion)).toBe(Date.parse(citaPacienteGuardar.FechaCitacion))
-            expect(citaPacienteObtenida.HoraCitacion).toBe(citaPacienteGuardar.HoraCitacion)
-            expect(citaPacienteObtenida.NumeroPaciente).toBe(citaPacienteGuardar.NumeroPaciente)
-            expect(citaPacienteObtenida.CodigoAmbito).toBe(citaPacienteGuardar.CodigoAmbito)
+            expect(citaPacienteObtenida.correlativoCita).toBe(citaPacienteGuardar.correlativoCita)
+            expect(citaPacienteObtenida.nombreLugar).toBe(citaPacienteGuardar.nombreLugar)
+            expect(citaPacienteObtenida.nombreServicio).toBe(citaPacienteGuardar.nombreServicio)
+            expect(citaPacienteObtenida.nombreProfesional).toBe(citaPacienteGuardar.nombreProfesional)
+            expect(Date.parse(citaPacienteObtenida.fechaCitacion)).toBe(Date.parse(citaPacienteGuardar.fechaCitacion))
+            expect(citaPacienteObtenida.horaCitacion).toBe(citaPacienteGuardar.horaCitacion)
+            expect(citaPacienteObtenida.numeroPaciente).toBe(citaPacienteGuardar.numeroPaciente)
+            expect(citaPacienteObtenida.codigoAmbito).toBe(citaPacienteGuardar.codigoAmbito)
 
             done()
         })
@@ -97,26 +97,26 @@ describe('Endpoints citas pacientes', () => {
     describe('Delete cita paciente', () => {
         it('Should not delete cita paciente from database', async (done) => {
             await CitasPacientes.create(citaPacienteGuardar)
-            const response = await request.delete(`/hra/hradb_a_mongodb/citas_pacientes/${citaPacienteGuardar.CorrelativoCita}`)
+            const response = await request.delete(`/hra/hradb_a_mongodb/citas_pacientes/${citaPacienteGuardar.correlativoCita}`)
                 .set('Authorization', 'no-token')
-            const citaPacienteObtenida = await CitasPacientes.findOne({ CorrelativoCita: citaPacienteGuardar.CorrelativoCita })
-            expect(response.status).toBe(403)
+            const citaPacienteObtenida = await CitasPacientes.findOne({ correlativoCita: citaPacienteGuardar.correlativoCita })
+            expect(response.status).toBe(401)
             expect(citaPacienteObtenida).toBeTruthy()
 
             done()
         })
         it('Should delete cita paciente from database', async (done) => {
             await CitasPacientes.create(citaPacienteGuardar)
-            const response = await request.delete(`/hra/hradb_a_mongodb/citas_pacientes/${citaPacienteGuardar.CorrelativoCita}`)
+            const response = await request.delete(`/hra/hradb_a_mongodb/citas_pacientes/${citaPacienteGuardar.correlativoCita}`)
                 .set('Authorization', token)
-            const citaPacienteObtenida = await CitasPacientes.findOne({ CorrelativoCita: citaPacienteGuardar.CorrelativoCita })
+            const citaPacienteObtenida = await CitasPacientes.findOne({ correlativoCita: citaPacienteGuardar.correlativoCita })
             expect(response.status).toBe(204)
             expect(citaPacienteObtenida).toBeFalsy()
 
             done()
         })
         it('Should not fail if cita paciente does not exists', async (done) => {
-            const response = await request.delete(`/hra/hradb_a_mongodb/citas_pacientes/${citaPacienteGuardar.CorrelativoCita}`)
+            const response = await request.delete(`/hra/hradb_a_mongodb/citas_pacientes/${citaPacienteGuardar.correlativoCita}`)
                 .set('Authorization', token)
             expect(response.status).toBe(204)
 

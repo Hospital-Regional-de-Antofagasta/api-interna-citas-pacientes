@@ -1,32 +1,32 @@
 [
     {
-        "CorrelativoCita": 1,
-        "NombreLugar": "NombreLugar 1",
-        "NombreServicio": "NombreServicio 1",
-        "NombreProfesional": "NombreProfesional 1",
-        "FechaCitacion": "2021-06-30T11:38:13.570Z",
-        "HoraCitacion": "11:30",
-        "NumeroPaciente": 17,
-        "CodigoAmbito": "01"
+        "correlativoCita": 1,
+        "nombreLugar": "nombreLugar 1",
+        "nombreServicio": "nombreServicio 1",
+        "nombreProfesional": "nombreProfesional 1",
+        "fechaCitacion": "2021-06-30T11:38:13.570Z",
+        "horaCitacion": "11:30",
+        "numeroPaciente": 17,
+        "codigoAmbito": "01"
     },
     {
-        "CorrelativoCita": 2,
-        "NombreLugar": "NombreLugar 2",
-        "NombreServicio": "NombreServicio 2",
-        "NombreProfesional": "NombreProfesional 2",
-        "FechaCitacion": "2021-07-30T11:38:13.570Z",
-        "HoraCitacion": "12:30",
-        "NumeroPaciente": 18,
-        "CodigoAmbito": "04"
+        "correlativoCita": 2,
+        "nombreLugar": "nombreLugar 2",
+        "nombreServicio": "nombreServicio 2",
+        "nombreProfesional": "nombreProfesional 2",
+        "fechaCitacion": "2021-07-30T11:38:13.570Z",
+        "horaCitacion": "12:30",
+        "numeroPaciente": 18,
+        "codigoAmbito": "04"
     },
     {
-        "CorrelativoCita": 3,
-        "NombreLugar": "NombreLugar 3",
-        "NombreServicio": "NombreServicio 3",
-        "NombreProfesional": "NombreProfesional 3",
-        "FechaCitacion": "2021-08-30T11:38:13.570Z",
-        "HoraCitacion": "13:30",
-        "NumeroPaciente": 19,
-        "CodigoAmbito": "06"
+        "correlativoCita": 3,
+        "nombreLugar": "nombreLugar 3",
+        "nombreServicio": "nombreServicio 3",
+        "nombreProfesional": "nombreProfesional 3",
+        "fechaCitacion": "2021-08-30T11:38:13.570Z",
+        "horaCitacion": "13:30",
+        "numeroPaciente": 19,
+        "codigoAmbito": "06"
     }
 ]
