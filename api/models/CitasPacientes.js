@@ -8,12 +8,16 @@ const CitasPacientes = mongoose.model('citas_paciente', new Schema ({
         unique: true,
     },
     nombreLugar: String,
+    codigoServicio: String,
     nombreServicio: String,
+    codigoProfesional: String,
     nombreProfesional: String,
     fechaCitacion: Date,
     horaCitacion: String,
     numeroPaciente: Number,
     codigoAmbito: String,
-}, { timestamps: true }))
+    tipoCita: String,
+    alta: { type: Boolean, default: false },
+  }, { timestamps: true }))
 
 module.exports = CitasPacientes
