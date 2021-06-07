@@ -1,8 +1,9 @@
 const supertest = require ('supertest')
-const app = require('../index')
+const app = require('../api/index')
 const mongoose = require('mongoose')
-const CitasPacientes = require('../models/CitasPacientes')
-const citasPacientesSeeds = require('../testSeeds/citaspacientesSeed.json')
+const CitasPacientes = require('../api/models/CitasPacientes')
+const citasPacientesSeeds = require('../api/testSeeds/citaspacientesSeed.json')
+
 
 const request = supertest(app)
 

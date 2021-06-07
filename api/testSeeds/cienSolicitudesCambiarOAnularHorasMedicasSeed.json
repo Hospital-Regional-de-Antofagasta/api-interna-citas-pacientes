@@ -1,0 +1,962 @@
+[
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 111,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 123,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 428,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": 456,
+    "numeroPaciente": 123,
+    "correlativoCita": 1234,
+    "tipoSolicitud": "ANULAR",
+    "respondida": true,
+    "enviadaHospital": false
+  },
+  {
+    "correlativoSolicitud": null,
+    "numeroPaciente": 1233,
+    "correlativoCita": null,
+    "tipoSolicitud": "ANULAR",
+    "respondida": false,
+    "enviadaHospital": false
+  }
+]
