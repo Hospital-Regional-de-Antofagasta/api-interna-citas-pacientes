@@ -1,5 +1,6 @@
 const CitasPacientes = require('../models/CitasPacientes')
 
+
 exports.getLast = async (req, res) => {
     try {
         const citaPaciente = await CitasPacientes.findOne()
@@ -28,3 +29,5 @@ exports.delete = async (req, res) => {
         res.status(500).send(`Citas Pacientes: ${error.name} - ${error.message}`)
     }
 }
+
+
