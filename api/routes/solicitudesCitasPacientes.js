@@ -1,5 +1,5 @@
 const express = require("express");
-const solicitudesCitasPacientesController = require("../controllers/solicitudesControlController");
+const solicitudesCitasPacientesController = require("../controllers/solicitudesCitasPacientesController");
 const { isAuthenticated } = require("../middleware/auth");
 
 const router = express.Router();
