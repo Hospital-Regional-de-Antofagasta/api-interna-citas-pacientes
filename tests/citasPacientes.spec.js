@@ -3,7 +3,7 @@ const app = require('../api/index')
 const mongoose = require('mongoose')
 const CitasPacientes = require('../api/models/CitasPacientes')
 const citasPacientesSeeds = require('../api/testSeeds/citaspacientesSeed.json')
-const moment = require ('moment')
+
 
 const request = supertest(app)
 
@@ -12,6 +12,7 @@ const token = process.env.HRADB_A_MONGODB_SECRET
 beforeEach(async () => {
     await mongoose.disconnect()
     await mongoose.connect(`${process.env.MONGO_URI_TEST}citas_pacientes_test`, { useNewUrlParser: true, useUnifiedTopology: true })
+    await CitasPacientes.deleteMany()
     await CitasPacientes.create(citasPacientesSeeds)
 })
 
@@ -25,7 +26,7 @@ const citaPacienteGuardar = [{
     nombreLugar: 'nombreLugar',
     nombreServicio: 'nombreServicio',
     nombreProfesional: 'nombreProfesional',
-    fechaCitacion: '2021-10-30',
+    fechaCitacion: '2021-10-30T04:00:00.000Z',
     horaCitacion: '10:30',
     numeroPaciente: 16,
     codigoAmbito: '01'
