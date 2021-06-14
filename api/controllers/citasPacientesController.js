@@ -1,6 +1,4 @@
 const CitasPacientes = require('../models/CitasPacientes')
-const moment = require ('moment')
-
 
 exports.getLast = async (req, res) => {
     try {
@@ -14,10 +12,6 @@ exports.getLast = async (req, res) => {
 
 exports.create = async (req, res) => {
     try {
-        const citas = req.body
-        citas.forEach(cita => {
-            cita.fechaCitacion = moment(cita.fechaCitacion).startOf('day')
-        });
         await CitasPacientes.create(req.body)
         res.sendStatus(201)
     } catch (error) {
