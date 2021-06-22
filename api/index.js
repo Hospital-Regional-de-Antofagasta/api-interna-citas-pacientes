@@ -14,6 +14,7 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
 
 app.use('/hra/hradb_a_mongodb/citas_pacientes', citasPacientes)
 
-app.use("/hra/hradb_a_mongodb/solicitudes_control", solicitudesCitasPacientes);
+app.use('/hra/hradb_a_mongodb/citas_pacientes/solicitudes', solicitudesCitasPacientes)
+
 
 module.exports = app

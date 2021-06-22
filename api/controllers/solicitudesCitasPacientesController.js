@@ -1,23 +1,21 @@
-const SolicitudesCambiarOAnularHorasMedicas = require("../models/SolicitudesCambiarOAnularHorasMedicas");
+const SolicitudesAnularCambiarCitasPacientes = require("../models/SolicitudesAnularCambiarCitasPacientes");
 
-exports.getNuevasSolicitudesCambiarOAnularHorasMedicas = async (req, res) => {
+exports.getNuevasSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
   try {
-    const tipoSolicitud = req.params.tipoSolicitud;
-    const solicitudesCambiarOAnularHorasMedicas = await SolicitudesCambiarOAnularHorasMedicas.find({
-      tipoSolicitud,
+    const solicitudesAnularCambiarCitasPacientes = await SolicitudesAnularCambiarCitasPacientes.find({
       enviadaHospital: false,
     })
       .sort({ createdAt: 1 })
       .limit(100)
       .exec();
-    solicitudesCambiarOAnularHorasMedicas.forEach(async (solicitud) => {
+    solicitudesAnularCambiarCitasPacientes.forEach(async (solicitud) => {
       solicitud.enviadaHospital = true;
-      await SolicitudesCambiarOAnularHorasMedicas.updateOne(
+      await SolicitudesAnularCambiarCitasPacientes.updateOne(
         { _id: solicitud._id },
         { enviadaHospital: true }
       ).exec();
     });
-    res.status(200).send(solicitudesCambiarOAnularHorasMedicas);
+    res.status(200).send(solicitudesAnularCambiarCitasPacientes);
   } catch (error) {
     res.status(500).send({
       respuesta: `Pacientes update: ${error.name} - ${error.message}`,
@@ -25,7 +23,7 @@ exports.getNuevasSolicitudesCambiarOAnularHorasMedicas = async (req, res) => {
   }
 };
 
-exports.updateEstadoSolicitudesCambiarOAnularHorasMedicas = async (req, res) => {
+exports.updateEstadoSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
   try {
     const idSolicitud = req.params.idSolicitud;
     const { _id, correlativoSolicitud, correlativoCita, respondida } = req.body;
@@ -36,7 +34,7 @@ exports.updateEstadoSolicitudesCambiarOAnularHorasMedicas = async (req, res) => 
     // el correlativoCita es null para las solicitudes de tipo CAMBIAR Y ANULAR
     if (correlativoCita)
       modificacionesSolicitud.correlativoCita = correlativoCita;
-    const solicitudActualizada = await SolicitudesCambiarOAnularHorasMedicas.findByIdAndUpdate(
+    const solicitudActualizada = await SolicitudesAnularCambiarCitasPacientes.findByIdAndUpdate(
       idSolicitud,
       modificacionesSolicitud
     ).exec();
