@@ -16,4 +16,10 @@ router.put(
   solicitudesCitasPacientesController.updateEstadoSolicitudesAnularCambiarCitasPacientes
 );
 
+router.delete(
+  "/anular_cambiar/:idSolicitud",
+  isAuthenticated,
+  solicitudesCitasPacientesController.deleteSolicitudesAnularCambiarCitasPacientes
+);
+
 module.exports = router;
