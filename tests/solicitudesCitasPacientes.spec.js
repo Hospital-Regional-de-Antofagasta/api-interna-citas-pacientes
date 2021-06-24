@@ -29,7 +29,7 @@ afterEach(async () => {
 });
 
 describe("Enpoints solicitudes de control no enviadas", () => {
-  describe("Get solicitudes de control no enviadas por tipo", () => {
+  describe("GET /hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/no_enviadas/", () => {
     it("Should not get solicitudes de control no enviadas", async (done) => {
       const response = await request
         .get(
@@ -98,7 +98,7 @@ describe("Enpoints solicitudes de control no enviadas", () => {
       done();
     });
   });
-  describe("Update solicitud de control as respondida and add correlativoCita depending on tipoSolicitud", () => {
+  describe("PUT /hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/:idSolicitud", () => {
     it("Should not update estado solicitud control", async (done) => {
       const newSolicitudControl =
         await SolicitudesAnularCambiarCitasPacientes.create({
@@ -178,7 +178,7 @@ describe("Enpoints solicitudes de control no enviadas", () => {
       done();
     });
   });
-  describe("Delete solicitud de citas pacientes", () => {
+  describe("DELETE /hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/:idSolicitud", () => {
     it("Should not delete non existing solicitud", async (done) => {
       const response = await request
         .delete(
