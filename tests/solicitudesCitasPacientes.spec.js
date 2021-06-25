@@ -1,9 +1,9 @@
 const supertest = require("supertest");
 const app = require("../api/index");
 const mongoose = require("mongoose");
-const SolicitudesCambiarOAnularHorasMedicas = require("../api/models/SolicitudesCambiarOAnularHorasMedicas");
-const solicitudesCambiarOAnularHorasMedicasSeed = require("../api/testSeeds/solicitudesCambiarOAnularHorasMedicas.json");
-const cienSolicitudesCambiarOAnularHorasMedicasSeed = require("../api/testSeeds/cienSolicitudesCambiarOAnularHorasMedicasSeed.json");
+const SolicitudesAnularCambiarCitasPacientes = require("../api/models/SolicitudesAnularCambiarCitasPacientes");
+const SolicitudesAnularCambiarCitasPacientesSeed = require("../api/testSeeds/solicitudesAnularCambiarCitasPacientes.json");
+const cienSolicitudesAnularCambiarCitasPacientesSeed = require("../api/testSeeds/cienSolicitudesAnularCambiarCitasPacientesSeed.json");
 
 const request = supertest(app);
 
@@ -12,25 +12,29 @@ const token = process.env.HRADB_A_MONGODB_SECRET;
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(
-    `${process.env.MONGO_URI_TEST}solicitudes_control_test`,
+    `${process.env.MONGO_URI_TEST}solicitudes_citas_pacientes_test`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }
   );
-  await SolicitudesCambiarOAnularHorasMedicas.create(solicitudesCambiarOAnularHorasMedicasSeed);
+  await SolicitudesAnularCambiarCitasPacientes.create(
+    SolicitudesAnularCambiarCitasPacientesSeed
+  );
 });
 
 afterEach(async () => {
-  await SolicitudesCambiarOAnularHorasMedicas.deleteMany();
+  await SolicitudesAnularCambiarCitasPacientes.deleteMany();
   await mongoose.disconnect();
 });
 
 describe("Enpoints solicitudes de control no enviadas", () => {
-  describe("Get solicitudes de control no enviadas por tipo", () => {
+  describe("GET /hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/no_enviadas/", () => {
     it("Should not get solicitudes de control no enviadas", async (done) => {
       const response = await request
-        .get("/hra/hradb_a_mongodb/solicitudes_control/no_enviadas/AGENDAR")
+        .get(
+          "/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/no_enviadas/"
+        )
         .set("Authorization", "no-token");
 
       expect(response.status).toBe(401);
@@ -39,9 +43,11 @@ describe("Enpoints solicitudes de control no enviadas", () => {
       done();
     });
     it("Should get 0 solicitudes de control no enviadas from empty database", async (done) => {
-      await SolicitudesCambiarOAnularHorasMedicas.deleteMany();
+      await SolicitudesAnularCambiarCitasPacientes.deleteMany();
       const response = await request
-        .get("/hra/hradb_a_mongodb/solicitudes_control/no_enviadas/ANULAR")
+        .get(
+          "/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/no_enviadas"
+        )
         .set("Authorization", token);
 
       expect(response.status).toBe(200);
@@ -51,13 +57,16 @@ describe("Enpoints solicitudes de control no enviadas", () => {
     });
     it("Should get solicitudes de control no enviadas", async (done) => {
       const response = await request
-        .get("/hra/hradb_a_mongodb/solicitudes_control/no_enviadas/ANULAR")
+        .get(
+          "/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/no_enviadas"
+        )
         .set("Authorization", token);
 
-      const solicitudesActualizadas = await SolicitudesCambiarOAnularHorasMedicas.find({
-        tipoSolicitud: "ANULAR",
-        enviadaHospital: true,
-      });
+      const solicitudesActualizadas =
+        await SolicitudesAnularCambiarCitasPacientes.find({
+          tipoSolicitud: "ANULAR",
+          enviadaHospital: true,
+        });
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(2);
@@ -66,16 +75,21 @@ describe("Enpoints solicitudes de control no enviadas", () => {
       done();
     });
     it("Should get only 100 solicitudes de control no enviadas", async (done) => {
-      await SolicitudesCambiarOAnularHorasMedicas.deleteMany();
-      await SolicitudesCambiarOAnularHorasMedicas.create(cienSolicitudesCambiarOAnularHorasMedicasSeed);
+      await SolicitudesAnularCambiarCitasPacientes.deleteMany();
+      await SolicitudesAnularCambiarCitasPacientes.create(
+        cienSolicitudesAnularCambiarCitasPacientesSeed
+      );
       const response = await request
-        .get("/hra/hradb_a_mongodb/solicitudes_control/no_enviadas/ANULAR")
+        .get(
+          "/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/no_enviadas"
+        )
         .set("Authorization", token);
 
-      const solicitudesActualizadas = await SolicitudesCambiarOAnularHorasMedicas.find({
-        tipoSolicitud: "ANULAR",
-        enviadaHospital: true,
-      });
+      const solicitudesActualizadas =
+        await SolicitudesAnularCambiarCitasPacientes.find({
+          tipoSolicitud: "ANULAR",
+          enviadaHospital: true,
+        });
 
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(100);
@@ -84,19 +98,20 @@ describe("Enpoints solicitudes de control no enviadas", () => {
       done();
     });
   });
-  describe("Update solicitud de control as respondida and add correlativoCita depending on tipoSolicitud", () => {
+  describe("PUT /hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/:idSolicitud", () => {
     it("Should not update estado solicitud control", async (done) => {
-      const newSolicitudControl = await SolicitudesCambiarOAnularHorasMedicas.create({
-        correlativoSolicitud: null,
-        numeroPaciente: 123,
-        correlativoCita: null,
-        tipoSolicitud: "ANULAR",
-        respondida: false,
-      });
+      const newSolicitudControl =
+        await SolicitudesAnularCambiarCitasPacientes.create({
+          correlativoSolicitud: null,
+          numeroPaciente: 123,
+          correlativoCita: null,
+          tipoSolicitud: "ANULAR",
+          respondida: false,
+        });
 
       const response = await request
         .put(
-          `/hra/hradb_a_mongodb/solicitudes_control/${newSolicitudControl._id}`
+          `/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/${newSolicitudControl._id}`
         )
         .set("Authorization", "no-token")
         .send({
@@ -113,7 +128,7 @@ describe("Enpoints solicitudes de control no enviadas", () => {
     it("Should not update estado of non existing solicitud", async (done) => {
       const response = await request
         .put(
-          `/hra/hradb_a_mongodb/solicitudes_control/60a26ce906ec5a89b4fd6240`
+          `/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/60a26ce906ec5a89b4fd6240`
         )
         .set("Authorization", token)
         .send({
@@ -127,18 +142,19 @@ describe("Enpoints solicitudes de control no enviadas", () => {
 
       done();
     });
-    it("Should update estado solicitud de control as respondida and add correlativoCita", async (done) => {
-      const newSolicitudControl = await SolicitudesCambiarOAnularHorasMedicas.create({
-        correlativoSolicitud: null,
-        numeroPaciente: 123,
-        correlativoCita: null,
-        tipoSolicitud: "ANULAR",
-        respondida: false,
-      });
+    it("Should update estado solicitud de control as respondida", async (done) => {
+      const newSolicitudControl =
+        await SolicitudesAnularCambiarCitasPacientes.create({
+          correlativoSolicitud: null,
+          numeroPaciente: 123,
+          correlativoCita: 456,
+          tipoSolicitud: "ANULAR",
+          respondida: false,
+        });
 
       const response = await request
         .put(
-          `/hra/hradb_a_mongodb/solicitudes_control/${newSolicitudControl._id}`
+          `/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/${newSolicitudControl._id}`
         )
         .set("Authorization", token)
         .send({
@@ -147,9 +163,10 @@ describe("Enpoints solicitudes de control no enviadas", () => {
           respondida: true,
         });
 
-      const solicitudControlActualizada = await SolicitudesCambiarOAnularHorasMedicas.findById(
-        newSolicitudControl._id
-      );
+      const solicitudControlActualizada =
+        await SolicitudesAnularCambiarCitasPacientes.findById(
+          newSolicitudControl._id
+        );
 
       expect(response.status).toBe(204);
       expect(response.body).toEqual({});
@@ -160,37 +177,50 @@ describe("Enpoints solicitudes de control no enviadas", () => {
 
       done();
     });
-    it("Should update estado solicitud de control as respondida and keep correlativoCita", async (done) => {
-      const newSolicitudControl = await SolicitudesCambiarOAnularHorasMedicas.create({
-        correlativoSolicitud: null,
-        numeroPaciente: 123,
-        correlativoCita: 987,
-        tipoSolicitud: "ANULAR",
-        respondida: false,
-      });
-
+  });
+  describe("DELETE /hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/:idSolicitud", () => {
+    it("Should not delete non existing solicitud", async (done) => {
       const response = await request
-        .put(
-          `/hra/hradb_a_mongodb/solicitudes_control/${newSolicitudControl._id}`
+        .delete(
+          `/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/60a26ce906ec5a89b4fd6240`
         )
         .set("Authorization", token)
         .send({
-          _id: newSolicitudControl._id,
           correlativoSolicitud: 789,
-          correlativoCita: null,
+          correlativoCita: 456,
           respondida: true,
         });
 
-      const solicitudControlActualizada = await SolicitudesCambiarOAnularHorasMedicas.findById(
-        newSolicitudControl._id
-      );
+      expect(response.status).toBe(404);
+      expect(response.body.respuesta).toBe("Solicitud no encontrada.");
+
+      done();
+    });
+    it("Should delete solicitud", async (done) => {
+      const newSolicitudControl =
+        await SolicitudesAnularCambiarCitasPacientes.create({
+          correlativoSolicitud: null,
+          numeroPaciente: 123,
+          correlativoCita: 456,
+          tipoSolicitud: "ANULAR",
+          respondida: false,
+        });
+
+      const response = await request
+        .delete(
+          `/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/${newSolicitudControl._id}`
+        )
+        .set("Authorization", token);
+
+      const solicitudControlEliminada =
+        await SolicitudesAnularCambiarCitasPacientes.findById(
+          newSolicitudControl._id
+        );
 
       expect(response.status).toBe(204);
       expect(response.body).toEqual({});
 
-      expect(solicitudControlActualizada.correlativoSolicitud).toBe(789);
-      expect(solicitudControlActualizada.correlativoCita).toBe(987);
-      expect(solicitudControlActualizada.respondida).toBeTruthy();
+      expect(solicitudControlEliminada).toBeFalsy();
 
       done();
     });
