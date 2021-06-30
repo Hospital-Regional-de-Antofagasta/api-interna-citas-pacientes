@@ -179,7 +179,7 @@ describe("Enpoints solicitudes de control no enviadas", () => {
     });
   });
   describe("DELETE /hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/:idSolicitud", () => {
-    it("Should not delete non existing solicitud", async (done) => {
+    it("Should delete non existing solicitud", async (done) => {
       const response = await request
         .delete(
           `/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/60a26ce906ec5a89b4fd6240`
@@ -191,9 +191,8 @@ describe("Enpoints solicitudes de control no enviadas", () => {
           respondida: true,
         });
 
-      expect(response.status).toBe(404);
-      expect(response.body.respuesta).toBe("Solicitud no encontrada.");
-
+      expect(response.status).toBe(204);      
+      expect(response.body).toEqual({});
       done();
     });
     it("Should delete solicitud", async (done) => {

@@ -62,8 +62,6 @@ exports.deleteSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
       await SolicitudesAnularCambiarCitasPacientes.findByIdAndDelete(
         idSolicitud
       ).exec();
-    if (!solicitudEliminada)
-      return res.status(404).send({ respuesta: "Solicitud no encontrada." });
     res.sendStatus(204);
   } catch (error) {
     console.log("error.name", error.name);
