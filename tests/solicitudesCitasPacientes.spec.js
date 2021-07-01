@@ -125,7 +125,7 @@ describe("Enpoints solicitudes de control no enviadas", () => {
 
       done();
     });
-    it("Should not update estado of non existing solicitud", async (done) => {
+    it("Should update estado of non existing solicitud", async (done) => {
       const response = await request
         .put(
           `/hra/hradb_a_mongodb/citas_pacientes/solicitudes/anular_cambiar/60a26ce906ec5a89b4fd6240`
@@ -137,8 +137,8 @@ describe("Enpoints solicitudes de control no enviadas", () => {
           respondida: true,
         });
 
-      expect(response.status).toBe(404);
-      expect(response.body.respuesta).toBe("Solicitud no encontrada.");
+      expect(response.status).toBe(204);      
+      expect(response.body).toEqual({});
 
       done();
     });

@@ -43,8 +43,6 @@ exports.updateEstadoSolicitudesAnularCambiarCitasPacientes = async (
         idSolicitud,
         modificacionesSolicitud
       ).exec();
-    if (!solicitudActualizada)
-      return res.status(404).send({ respuesta: "Solicitud no encontrada." });
     res.sendStatus(204);
   } catch (error) {
     console.log("error.name", error.name);
