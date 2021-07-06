@@ -5,15 +5,21 @@ const { isAuthenticated } = require("../middleware/auth");
 const router = express.Router();
 
 router.get(
-  "/no_enviadas/:tipoSolicitud",
+  "/anular_cambiar/no_enviadas",
   isAuthenticated,
-  solicitudesCitasPacientesController.getNuevasSolicitudesCambiarOAnularHorasMedicas
+  solicitudesCitasPacientesController.getNuevasSolicitudesAnularCambiarCitasPacientes
 );
 
 router.put(
-  "/:idSolicitud",
+  "/anular_cambiar/:idSolicitud",
   isAuthenticated,
-  solicitudesCitasPacientesController.updateEstadoSolicitudesCambiarOAnularHorasMedicas
+  solicitudesCitasPacientesController.updateEstadoSolicitudesAnularCambiarCitasPacientes
+);
+
+router.delete(
+  "/anular_cambiar/:idSolicitud",
+  isAuthenticated,
+  solicitudesCitasPacientesController.deleteSolicitudesAnularCambiarCitasPacientes
 );
 
 module.exports = router;
