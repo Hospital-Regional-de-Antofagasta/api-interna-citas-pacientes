@@ -45,8 +45,6 @@ exports.updateEstadoSolicitudesAnularCambiarCitasPacientes = async (
       ).exec();
     res.sendStatus(204);
   } catch (error) {
-    console.log("error.name", error.name);
-    console.log("error.message", error.message);
     res.status(500).send({
       respuesta: `Update Solicitudes Anular/Cambiar Citas Pacientes: ${error.name} - ${error.message}`,
     });
@@ -62,8 +60,6 @@ exports.deleteSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
       ).exec();
     res.sendStatus(204);
   } catch (error) {
-    console.log("error.name", error.name);
-    console.log("error.message", error.message);
     res.status(500).send({
       respuesta: `Delete Solicitudes Anular/Cambiar Citas Pacientes: ${error.name} - ${error.message}`,
     });
