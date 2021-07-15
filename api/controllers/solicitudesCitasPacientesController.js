@@ -9,13 +9,6 @@ exports.getNuevasSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
         .sort({ createdAt: 1 })
         .limit(100)
         .exec();
-    for (const solicitud of solicitudesAnularCambiarCitasPacientes) {
-      solicitud.enviadaHospital = true;
-      await SolicitudesAnularCambiarCitasPacientes.updateOne(
-        { _id: solicitud._id },
-        { enviadaHospital: true }
-      ).exec();
-    }
     res.status(200).send(solicitudesAnularCambiarCitasPacientes);
   } catch (error) {
     res.status(500).send({

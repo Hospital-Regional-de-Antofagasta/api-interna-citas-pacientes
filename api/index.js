@@ -15,10 +15,10 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
 
-app.use("/hra/hradb_a_mongodb/citas_pacientes", citasPacientes);
+app.use("/hradb-a-mongodb/citas-pacientes", citasPacientes);
 
 app.use(
-  "/hra/hradb_a_mongodb/citas_pacientes/solicitudes",
+  "/hradb-a-mongodb/citas-pacientes/solicitudes",
   solicitudesCitasPacientes
 );
 
