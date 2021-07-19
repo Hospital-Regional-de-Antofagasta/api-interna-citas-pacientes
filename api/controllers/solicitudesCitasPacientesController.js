@@ -9,13 +9,6 @@ exports.getNuevasSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
         .sort({ createdAt: 1 })
         .limit(100)
         .exec();
-    for (const solicitud of solicitudesAnularCambiarCitasPacientes) {
-      solicitud.enviadaHospital = true;
-      await SolicitudesAnularCambiarCitasPacientes.updateOne(
-        { _id: solicitud._id },
-        { enviadaHospital: true }
-      ).exec();
-    }
     res.status(200).send(solicitudesAnularCambiarCitasPacientes);
   } catch (error) {
     res.status(500).send({
@@ -30,17 +23,17 @@ exports.updateEstadoSolicitudesAnularCambiarCitasPacientes = async (
 ) => {
   try {
     const idSolicitud = req.params.idSolicitud;
-    const { _id, correlativoSolicitud, respondida, motivo, detallesMotivo } =
+    const { _id, correlativoSolicitud, respondida, motivo, detallesMotivo, enviadaHospital } =
       req.body;
     const modificacionesSolicitud = {
       correlativoSolicitud,
       motivo,
       detallesMotivo,
       respondida,
-    };
-    const solicitudActualizada =
-      await SolicitudesAnularCambiarCitasPacientes.findByIdAndUpdate(
-        idSolicitud,
+      enviadaHospital,
+    };    
+    await SolicitudesAnularCambiarCitasPacientes.updateOne(
+        {_id: idSolicitud},
         modificacionesSolicitud
       ).exec();
     res.sendStatus(204);
@@ -54,9 +47,8 @@ exports.updateEstadoSolicitudesAnularCambiarCitasPacientes = async (
 exports.deleteSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
   try {
     const idSolicitud = req.params.idSolicitud;
-    const solicitudEliminada =
-      await SolicitudesAnularCambiarCitasPacientes.findByIdAndDelete(
-        idSolicitud
+    await SolicitudesAnularCambiarCitasPacientes.deleteOne(
+        {_id: idSolicitud}
       ).exec();
     res.sendStatus(204);
   } catch (error) {
