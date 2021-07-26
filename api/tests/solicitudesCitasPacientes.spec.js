@@ -1,9 +1,9 @@
 const supertest = require("supertest");
-const app = require("../api/index");
+const app = require("../app");
 const mongoose = require("mongoose");
-const SolicitudesAnularCambiarCitasPacientes = require("../api/models/SolicitudesAnularCambiarCitasPacientes");
-const SolicitudesAnularCambiarCitasPacientesSeed = require("../api/testSeeds/solicitudesAnularCambiarCitasPacientes.json");
-const cienSolicitudesAnularCambiarCitasPacientesSeed = require("../api/testSeeds/cienSolicitudesAnularCambiarCitasPacientesSeed.json");
+const SolicitudesAnularCambiarCitasPacientes = require("../models/SolicitudesAnularCambiarCitasPacientes");
+const SolicitudesAnularCambiarCitasPacientesSeed = require("../testSeeds/solicitudesAnularCambiarCitasPacientes.json");
+const cienSolicitudesAnularCambiarCitasPacientesSeed = require("../testSeeds/cienSolicitudesAnularCambiarCitasPacientesSeed.json");
 
 const request = supertest(app);
 
