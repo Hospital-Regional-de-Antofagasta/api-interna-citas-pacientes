@@ -1,9 +1,10 @@
 const SolicitudesAnularCambiarCitasPacientes = require("../models/SolicitudesAnularCambiarCitasPacientes");
 
-exports.getNuevasSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
+exports.getSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
   try {
     const solicitudesAnularCambiarCitasPacientes =
       await SolicitudesAnularCambiarCitasPacientes.find({
+        'numeroPaciente.codigoEstablecimiento': req.params.codigoEstablecimiento,
         enviadaHospital: false,
       })
         .sort({ createdAt: 1 })

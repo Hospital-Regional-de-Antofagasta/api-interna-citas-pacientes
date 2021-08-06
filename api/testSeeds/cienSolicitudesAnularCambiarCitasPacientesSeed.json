@@ -1,7 +1,12 @@
 [
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -9,7 +14,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -17,7 +27,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -25,7 +40,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -33,7 +53,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -41,7 +66,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -49,7 +79,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -57,7 +92,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -65,7 +105,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -73,7 +118,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -81,7 +131,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -89,7 +144,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -97,7 +157,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -105,7 +170,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -113,7 +183,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -121,7 +196,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -129,7 +209,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -137,7 +222,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -145,7 +235,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -153,7 +248,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -161,7 +261,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -169,7 +274,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -177,7 +287,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -185,7 +300,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -193,7 +313,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -201,7 +326,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -209,7 +339,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -217,7 +352,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -225,7 +365,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -233,7 +378,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -241,7 +391,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -249,7 +404,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -257,7 +417,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -265,7 +430,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -273,7 +443,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -281,7 +456,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -289,7 +469,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -297,7 +482,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -305,7 +495,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -313,7 +508,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -321,7 +521,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -329,7 +534,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -337,7 +547,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -345,7 +560,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -353,7 +573,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -361,7 +586,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -369,7 +599,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -377,7 +612,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -385,7 +625,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -393,7 +638,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -401,7 +651,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -409,7 +664,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -417,7 +677,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -425,7 +690,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -433,7 +703,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -441,7 +716,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -449,7 +729,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -457,7 +742,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -465,7 +755,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -473,7 +768,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -481,7 +781,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -489,7 +794,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -497,7 +807,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -505,7 +820,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -513,7 +833,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -521,7 +846,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -529,7 +859,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -537,7 +872,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -545,7 +885,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -553,7 +898,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -561,7 +911,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -569,7 +924,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -577,7 +937,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -585,7 +950,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -593,7 +963,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -601,7 +976,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -609,7 +989,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -617,7 +1002,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -625,7 +1015,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -633,7 +1028,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -641,7 +1041,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -649,7 +1054,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -657,7 +1067,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -665,7 +1080,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -673,7 +1093,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -681,7 +1106,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -689,7 +1119,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -697,7 +1132,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -705,7 +1145,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -713,7 +1158,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -721,7 +1171,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -729,7 +1184,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -737,7 +1197,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -745,7 +1210,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -753,7 +1223,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -761,7 +1236,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -769,7 +1249,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -777,7 +1262,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -785,7 +1275,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -793,7 +1288,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -801,7 +1301,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -809,7 +1314,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -817,7 +1327,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -825,7 +1340,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -833,7 +1353,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -841,7 +1366,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -849,7 +1379,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -857,7 +1392,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -865,7 +1405,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -873,7 +1418,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -881,7 +1431,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -889,7 +1444,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -897,7 +1457,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -905,7 +1470,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -913,7 +1483,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -921,7 +1496,12 @@
   },
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -929,7 +1509,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -937,7 +1522,12 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -945,7 +1535,12 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 123,
+    "numeroPaciente": 
+      {
+        "numero": 123,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -953,7 +1548,12 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 1233,
+    "numeroPaciente": 
+      {
+        "numero": 1233,
+        "codigoEstablecimiento": "E01",
+        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
+      },
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,

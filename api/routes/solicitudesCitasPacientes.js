@@ -5,9 +5,9 @@ const { isAuthenticated } = require("../middleware/auth");
 const router = express.Router();
 
 router.get(
-  "/anular-cambiar/no-enviadas",
+  "/anular-cambiar/no-enviadas/:codigoEstablecimiento",
   isAuthenticated,
-  solicitudesCitasPacientesController.getNuevasSolicitudesAnularCambiarCitasPacientes
+  solicitudesCitasPacientesController.getSolicitudesAnularCambiarCitasPacientes
 );
 
 router.put(

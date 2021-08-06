@@ -29,15 +29,20 @@ const citaPacienteGuardar = {
   nombreProfesional: "nombreProfesional",
   fechaCitacion: "2021-10-30",
   horaCitacion: "10:30",
-  numeroPaciente: 16,
+  numeroPaciente: 
+      {
+        numero: 16,
+        codigoEstablecimiento: "E01",
+        nombreEstablecimiento: "Hospital Regional de Antofagasta"
+      },
   codigoAmbito: "01",
 };
 
 describe("Endpoints citas pacientes", () => {
-  describe("GET /hradb-a-mongodb/citas-pacientes/ultimo", () => {
+  describe("GET /hradb-a-mongodb/citas-pacientes/ultimo/:codigoEstablecimiento", () => {
     it("Should not get last cita paciente", async (done) => {
       const response = await request
-        .get("/hradb-a-mongodb/citas-pacientes/ultimo")
+        .get("/hradb-a-mongodb/citas-pacientes/ultimo/E01")
         .set("Authorization", "no-token");
       expect(response.status).toBe(401);
 
@@ -46,7 +51,7 @@ describe("Endpoints citas pacientes", () => {
     it("Should get last cita paciente from empty database", async (done) => {
       await CitasPacientes.deleteMany();
       const response = await request
-        .get("/hradb-a-mongodb/citas-pacientes/ultimo")
+        .get("/hradb-a-mongodb/citas-pacientes/ultimo/E01")
         .set("Authorization", token);
       expect(response.status).toBe(200);
       expect(response.body).toEqual({});
@@ -56,7 +61,7 @@ describe("Endpoints citas pacientes", () => {
     it("Should get last cita paciente from database", async (done) => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
-        .get("/hradb-a-mongodb/citas-pacientes/ultimo")
+        .get("/hradb-a-mongodb/citas-pacientes/ultimo/E01")
         .set("Authorization", token);
       expect(response.status).toBe(200);
       expect(response.body.correlativoCita).toBe(
@@ -73,8 +78,14 @@ describe("Endpoints citas pacientes", () => {
         Date.parse(citaPacienteGuardar.fechaCitacion)
       );
       expect(response.body.horaCitacion).toBe(citaPacienteGuardar.horaCitacion);
-      expect(response.body.numeroPaciente).toBe(
-        citaPacienteGuardar.numeroPaciente
+      expect(response.body.numeroPaciente.numero).toBe(
+        citaPacienteGuardar.numeroPaciente.numero
+      );
+      expect(response.body.numeroPaciente.codigoEstablecimiento).toBe(
+        citaPacienteGuardar.numeroPaciente.codigoEstablecimiento
+      );
+      expect(response.body.numeroPaciente.nombreEstablecimiento).toBe(
+        citaPacienteGuardar.numeroPaciente.nombreEstablecimiento
       );
       expect(response.body.codigoAmbito).toBe(citaPacienteGuardar.codigoAmbito);
 
@@ -122,8 +133,14 @@ describe("Endpoints citas pacientes", () => {
       expect(citaPacienteObtenida.horaCitacion).toBe(
         citaPacienteGuardar.horaCitacion
       );
-      expect(citaPacienteObtenida.numeroPaciente).toBe(
-        citaPacienteGuardar.numeroPaciente
+      expect(citaPacienteObtenida.numeroPaciente.numero).toBe(
+        citaPacienteGuardar.numeroPaciente.numero
+      );
+      expect(citaPacienteObtenida.numeroPaciente.codigoEstablecimiento).toBe(
+        citaPacienteGuardar.numeroPaciente.codigoEstablecimiento
+      );
+      expect(citaPacienteObtenida.numeroPaciente.nombreEstablecimiento).toBe(
+        citaPacienteGuardar.numeroPaciente.nombreEstablecimiento
       );
       expect(citaPacienteObtenida.codigoAmbito).toBe(
         citaPacienteGuardar.codigoAmbito
@@ -132,12 +149,12 @@ describe("Endpoints citas pacientes", () => {
       done();
     });
   });
-  describe("PUT /hradb-a-mongodb/citas-pacientes/:correlativoCita", () => {
+  describe("PUT /hradb-a-mongodb/citas-pacientes/:correlativoCita/:codigoEstablecimiento", () => {
     it("Should not update cita paciente from database", async (done) => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
         .put(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
         )
         .set("Authorization", "no-token");
       const citaPacienteObtenida = await CitasPacientes.findOne({
@@ -152,7 +169,7 @@ describe("Endpoints citas pacientes", () => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
         .put(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
         )
         .set("Authorization", token)
         .send({
@@ -180,7 +197,7 @@ describe("Endpoints citas pacientes", () => {
     });
     it("Should not fail if cita paciente does not exists", async (done) => {
       const response = await request
-        .put("/hradb-a-mongodb/citas-pacientes/0")
+        .put(`/hradb-a-mongodb/citas-pacientes/0/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`)
         .set("Authorization", token)
         .send({
           nombreLugar: "nombreLugarNuevo",
@@ -195,22 +212,24 @@ describe("Endpoints citas pacientes", () => {
         });
       const citaPacienteObtenida = await CitasPacientes.findOne({
         correlativoCita: 0,
+        'numeroPaciente.codigoEstablecimiento': citaPacienteGuardar.numeroPaciente.codigoEstablecimiento
       });
       expect(response.status).toBe(204);
       expect(citaPacienteObtenida).toBeFalsy();
       done();
     });
   });
-  describe("DELETE /hradb-a-mongodb/citas-pacientes/:correlativoCita", () => {
+  describe("DELETE /hradb-a-mongodb/citas-pacientes/:correlativoCita/:codigoEstablecimiento", () => {
     it("Should not delete cita paciente from database", async (done) => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
         .delete(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
         )
         .set("Authorization", "no-token");
       const citaPacienteObtenida = await CitasPacientes.findOne({
         correlativoCita: citaPacienteGuardar.correlativoCita,
+        'numeroPaciente.codigoEstablecimiento': citaPacienteGuardar.numeroPaciente.codigoEstablecimiento
       });
       expect(response.status).toBe(401);
       expect(citaPacienteObtenida).toBeTruthy();
@@ -221,11 +240,12 @@ describe("Endpoints citas pacientes", () => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
         .delete(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
         )
         .set("Authorization", token);
       const citaPacienteObtenida = await CitasPacientes.findOne({
         correlativoCita: citaPacienteGuardar.correlativoCita,
+        'numeroPaciente.codigoEstablecimiento': citaPacienteGuardar.numeroPaciente.codigoEstablecimiento
       });
       expect(response.status).toBe(204);
       expect(citaPacienteObtenida).toBeFalsy();
@@ -235,7 +255,7 @@ describe("Endpoints citas pacientes", () => {
     it("Should not fail if cita paciente does not exists", async (done) => {
       const response = await request
         .delete(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
         )
         .set("Authorization", token);
       expect(response.status).toBe(204);

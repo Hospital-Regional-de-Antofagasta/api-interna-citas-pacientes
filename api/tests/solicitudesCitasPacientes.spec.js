@@ -29,11 +29,11 @@ afterEach(async () => {
 });
 
 describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
-  describe("GET /hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/", () => {
+  describe("GET /hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/:codigoEstablecimiento", () => {
     it("Should not get solicitudes de anular/cambiar citas pacientes no enviadas", async (done) => {
       const response = await request
         .get(
-          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/"
+          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/E01"
         )
         .set("Authorization", "no-token");
 
@@ -46,7 +46,7 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       await SolicitudesAnularCambiarCitasPacientes.deleteMany();
       const response = await request
         .get(
-          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas"
+          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/E01"
         )
         .set("Authorization", token);
 
@@ -58,7 +58,7 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
     it("Should get solicitudes de anular/cambiar citas pacientes no enviadas", async (done) => {
       const response = await request
         .get(
-          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas"
+          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/E01"
         )
         .set("Authorization", token);
 
@@ -74,7 +74,7 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       );
       const response = await request
         .get(
-          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas"
+          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/E01"
         )
         .set("Authorization", token);
 
@@ -91,7 +91,11 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       const newSolicitudControl =
         await SolicitudesAnularCambiarCitasPacientes.create({
           correlativoSolicitud: null,
-          numeroPaciente: 123,
+          numeroPaciente: {
+            numero: 123,
+            codigoEstablecimiento: "E01",
+            nombreEstablecimiento: "Hospital Regional de Antofagasta",
+          },
           correlativoCita: null,
           tipoSolicitud: "ANULAR",
           respondida: false,
@@ -134,7 +138,11 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       const newSolicitudControl =
         await SolicitudesAnularCambiarCitasPacientes.create({
           correlativoSolicitud: null,
-          numeroPaciente: 123,
+          numeroPaciente: {
+            numero: 123,
+            codigoEstablecimiento: "E01",
+            nombreEstablecimiento: "Hospital Regional de Antofagasta",
+          },
           correlativoCita: 456,
           tipoSolicitud: "ANULAR",
           respondida: false,
@@ -187,7 +195,11 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       const newSolicitudControl =
         await SolicitudesAnularCambiarCitasPacientes.create({
           correlativoSolicitud: null,
-          numeroPaciente: 123,
+          numeroPaciente: {
+            numero: 123,
+            codigoEstablecimiento: "E01",
+            nombreEstablecimiento: "Hospital Regional de Antofagasta",
+          },
           correlativoCita: 456,
           tipoSolicitud: "ANULAR",
           respondida: false,
