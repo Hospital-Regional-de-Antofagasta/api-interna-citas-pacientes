@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get("/ultimo/:codigoEstablecimiento", isAuthenticated, citasPacientesController.getLast);
 
-router.post("/", isAuthenticated, citasPacientesController.create);
+router.post("", isAuthenticated, citasPacientesController.create);
 
 router.put(
   "/:correlativoCita/:codigoEstablecimiento",

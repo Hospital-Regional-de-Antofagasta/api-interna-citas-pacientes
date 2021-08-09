@@ -95,7 +95,7 @@ describe("Endpoints citas pacientes", () => {
   describe("POST /hradb-a-mongodb/citas-pacientes", () => {
     it("Should not save cita paciente to database", async (done) => {
       const response = await request
-        .post("/hradb-a-mongodb/citas-pacientes/")
+        .post("/hradb-a-mongodb/citas-pacientes")
         .set("Authorization", "no-token")
         .send(citaPacienteGuardar);
       const citaPacienteObtenida = await CitasPacientes.findOne({
@@ -108,7 +108,7 @@ describe("Endpoints citas pacientes", () => {
     });
     it("Should save cita paciente to database", async (done) => {
       const response = await request
-        .post("/hradb-a-mongodb/citas-pacientes/")
+        .post("/hradb-a-mongodb/citas-pacientes")
         .set("Authorization", token)
         .send(citaPacienteGuardar);
       const citaPacienteObtenida = await CitasPacientes.findOne({
