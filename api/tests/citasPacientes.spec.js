@@ -149,12 +149,12 @@ describe("Endpoints citas pacientes", () => {
       done();
     });
   });
-  describe("PUT /hradb-a-mongodb/citas-pacientes/:correlativoCita/:codigoEstablecimiento", () => {
+  describe("PUT /hradb-a-mongodb/citas-pacientes/:codigoEstablecimiento/:correlativoCita", () => {
     it("Should not update cita paciente from database", async (done) => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
         .put(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}/${citaPacienteGuardar.correlativoCita}`
         )
         .set("Authorization", "no-token");
       const citaPacienteObtenida = await CitasPacientes.findOne({
@@ -169,7 +169,7 @@ describe("Endpoints citas pacientes", () => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
         .put(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}/${citaPacienteGuardar.correlativoCita}`
         )
         .set("Authorization", token)
         .send({
@@ -197,7 +197,7 @@ describe("Endpoints citas pacientes", () => {
     });
     it("Should not fail if cita paciente does not exists", async (done) => {
       const response = await request
-        .put(`/hradb-a-mongodb/citas-pacientes/0/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`)
+        .put(`/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}/0`)
         .set("Authorization", token)
         .send({
           nombreLugar: "nombreLugarNuevo",
@@ -219,12 +219,12 @@ describe("Endpoints citas pacientes", () => {
       done();
     });
   });
-  describe("DELETE /hradb-a-mongodb/citas-pacientes/:correlativoCita/:codigoEstablecimiento", () => {
+  describe("DELETE /hradb-a-mongodb/citas-pacientes/:codigoEstablecimiento/:correlativoCita", () => {
     it("Should not delete cita paciente from database", async (done) => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
         .delete(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}/${citaPacienteGuardar.correlativoCita}`
         )
         .set("Authorization", "no-token");
       const citaPacienteObtenida = await CitasPacientes.findOne({
@@ -240,7 +240,7 @@ describe("Endpoints citas pacientes", () => {
       await CitasPacientes.create(citaPacienteGuardar);
       const response = await request
         .delete(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}/${citaPacienteGuardar.correlativoCita}`
         )
         .set("Authorization", token);
       const citaPacienteObtenida = await CitasPacientes.findOne({
@@ -255,7 +255,7 @@ describe("Endpoints citas pacientes", () => {
     it("Should not fail if cita paciente does not exists", async (done) => {
       const response = await request
         .delete(
-          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.correlativoCita}/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}`
+          `/hradb-a-mongodb/citas-pacientes/${citaPacienteGuardar.numeroPaciente.codigoEstablecimiento}/${citaPacienteGuardar.correlativoCita}`
         )
         .set("Authorization", token);
       expect(response.status).toBe(204);

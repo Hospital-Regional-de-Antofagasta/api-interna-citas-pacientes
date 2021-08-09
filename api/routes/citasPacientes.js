@@ -9,13 +9,13 @@ router.get("/ultimo/:codigoEstablecimiento", isAuthenticated, citasPacientesCont
 router.post("", isAuthenticated, citasPacientesController.create);
 
 router.put(
-  "/:correlativoCita/:codigoEstablecimiento",
+  "/:codigoEstablecimiento/:correlativoCita",
   isAuthenticated,
   citasPacientesController.update
 );
 
 router.delete(
-  "/:correlativoCita/:codigoEstablecimiento",
+  "/:codigoEstablecimiento/:correlativoCita",
   isAuthenticated,
   citasPacientesController.delete
 );
