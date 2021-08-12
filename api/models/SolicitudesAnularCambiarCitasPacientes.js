@@ -28,7 +28,7 @@ const SolicitudesAnularCambiarCitasPacientes = mongoose.model(
       },
     },
     { timestamps: true }
-  ).index({'numeroPaciente.numero':1,'numeroPaciente.codigoEstablecimiento':1},{unique: true}),
+  ),//.index({'numeroPaciente.numero':1,'numeroPaciente.codigoEstablecimiento':1},{unique: true}),
   "solicitudes_anular_cambiar_citas_pacientes"
 );
 
