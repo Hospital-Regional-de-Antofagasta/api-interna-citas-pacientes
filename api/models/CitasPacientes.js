@@ -18,8 +18,8 @@ const CitasPacientes = mongoose.model(
       fechaCitacion: Date,
       horaCitacion: String,
       numeroPaciente: {
-        numero: {type: Number, require: true, unique: true},
-        codigoEstablecimiento: {type: String, require: true, unique: true},
+        numero: {type: Number, require: true},
+        codigoEstablecimiento: {type: String, require: true},
         nombreEstablecimiento: String,
       },
       codigoAmbito: String,
@@ -28,7 +28,7 @@ const CitasPacientes = mongoose.model(
       blockedAt: Date,
     },
     { timestamps: true }
-  )
+  ).index({'numeroPaciente.numero':1,'numeroPaciente.codigoEstablecimiento':1},{unique: true})
 );
 
 module.exports = CitasPacientes;
