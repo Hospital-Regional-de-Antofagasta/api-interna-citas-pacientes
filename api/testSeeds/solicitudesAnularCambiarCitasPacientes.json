@@ -5,6 +5,9 @@
       {
         "numero": 123,
         "codigoEstablecimiento": "E01",
+        "hospital": {
+          "E01": 1
+        },
         "nombreEstablecimiento": "Hospital Regional de Antofagasta"
       },
     "correlativoCita": 1234,
@@ -18,6 +21,9 @@
       {
         "numero": 123,
         "codigoEstablecimiento": "E01",
+        "hospital": {
+          "E01": 1
+        },
         "nombreEstablecimiento": "Hospital Regional de Antofagasta"
       },
     "correlativoCita": null,
@@ -31,6 +37,9 @@
       {
         "numero": 123,
         "codigoEstablecimiento": "E01",
+        "hospital": {
+          "E01": 1
+        },
         "nombreEstablecimiento": "Hospital Regional de Antofagasta"
       },
     "correlativoCita": 1234,
@@ -44,6 +53,9 @@
       {
         "numero": 123,
         "codigoEstablecimiento": "E01",
+        "hospital": {
+          "E01": 1
+        },
         "nombreEstablecimiento": "Hospital Regional de Antofagasta"
       },
     "correlativoCita": 1234,
@@ -57,6 +69,9 @@
       {
         "numero": 123,
         "codigoEstablecimiento": "E01",
+        "hospital": {
+          "E01": 1
+        },
         "nombreEstablecimiento": "Hospital Regional de Antofagasta"
       },
     "correlativoCita": null,

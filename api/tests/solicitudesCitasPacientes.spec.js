@@ -94,6 +94,9 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
           numeroPaciente: {
             numero: 123,
             codigoEstablecimiento: "E01",
+            hospital: {
+              E01: 1
+            },
             nombreEstablecimiento: "Hospital Regional de Antofagasta",
           },
           correlativoCita: null,
@@ -141,6 +144,9 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
           numeroPaciente: {
             numero: 123,
             codigoEstablecimiento: "E01",
+            hospital: {
+              E01: 1
+            },
             nombreEstablecimiento: "Hospital Regional de Antofagasta",
           },
           correlativoCita: 456,
@@ -198,6 +204,9 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
           numeroPaciente: {
             numero: 123,
             codigoEstablecimiento: "E01",
+            hospital: {
+              E01: 1
+            },
             nombreEstablecimiento: "Hospital Regional de Antofagasta",
           },
           correlativoCita: 456,

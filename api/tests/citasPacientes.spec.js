@@ -33,6 +33,9 @@ const citaPacienteGuardar = {
       {
         numero: 16,
         codigoEstablecimiento: "E01",
+        hospital: {
+          E01: 1
+        },
         nombreEstablecimiento: "Hospital Regional de Antofagasta"
       },
   codigoAmbito: "01",

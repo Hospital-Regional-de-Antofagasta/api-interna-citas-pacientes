@@ -12,6 +12,9 @@
       {
         "numero": 17,
         "codigoEstablecimiento": "E01",
+        "hospital": {
+          "E01": 1
+        },
         "nombreEstablecimiento": "Hospital Regional de Antofagasta"
       },
     "codigoAmbito": "01",
@@ -31,6 +34,9 @@
       {
         "numero": 18,
         "codigoEstablecimiento": "E01",
+        "hospital": {
+          "E01": 1
+        },
         "nombreEstablecimiento": "Hospital Regional de Antofagasta"
       },
     "codigoAmbito": "04",
@@ -50,6 +56,9 @@
       {
         "numero": 19,
         "codigoEstablecimiento": "E01",
+        "hospital": {
+          "E01": 1
+        },
         "nombreEstablecimiento": "Hospital Regional de Antofagasta"
       },
     "codigoAmbito": "06",
