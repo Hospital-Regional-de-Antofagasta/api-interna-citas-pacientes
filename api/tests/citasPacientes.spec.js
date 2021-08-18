@@ -110,13 +110,15 @@ describe("Endpoints citas pacientes", () => {
       done();
     });
     it("Should save cita paciente to database", async (done) => {
+      citaPacienteGuardar.numeroPaciente.hospital = {}
       const response = await request
         .post("/hradb-a-mongodb/citas-pacientes")
         .set("Authorization", token)
         .send(citaPacienteGuardar);
       const citaPacienteObtenida = await CitasPacientes.findOne({
         correlativoCita: citaPacienteGuardar.correlativoCita,
-      });
+        'numeroPaciente.hospital': { E01: 1 },
+      })
       expect(response.status).toBe(201);
       expect(citaPacienteObtenida.correlativoCita).toBe(
         citaPacienteGuardar.correlativoCita
@@ -148,7 +150,9 @@ describe("Endpoints citas pacientes", () => {
       expect(citaPacienteObtenida.codigoAmbito).toBe(
         citaPacienteGuardar.codigoAmbito
       );
-
+      citaPacienteGuardar.numeroPaciente.hospital = {
+        E01: 1
+      }
       done();
     });
   });

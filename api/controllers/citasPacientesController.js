@@ -15,6 +15,10 @@ exports.getLast = async (req, res) => {
 
 exports.create = async (req, res) => {
   try {
+    const hospital ={}
+    const propiedad = `${req.body.numeroPaciente.codigoEstablecimiento}`;
+    hospital[propiedad] = 1
+    req.body.numeroPaciente.hospital = hospital
     await CitasPacientes.create(req.body);
     res.sendStatus(201);
   } catch (error) {
