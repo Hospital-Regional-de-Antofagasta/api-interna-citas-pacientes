@@ -110,7 +110,7 @@ describe("Endpoints citas pacientes", () => {
       done();
     });
     it("Should save cita paciente to database", async (done) => {
-      citaPacienteGuardar.numeroPaciente.hospital = {}
+      delete citaPacienteGuardar.numeroPaciente.hospital
       const response = await request
         .post("/hradb-a-mongodb/citas-pacientes")
         .set("Authorization", token)

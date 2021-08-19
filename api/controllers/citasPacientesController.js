@@ -15,11 +15,22 @@ exports.getLast = async (req, res) => {
 
 exports.create = async (req, res) => {
   try {
-    const hospital ={}
-    const propiedad = `${req.body.numeroPaciente.codigoEstablecimiento}`;
-    hospital[propiedad] = 1
-    req.body.numeroPaciente.hospital = hospital
-    await CitasPacientes.create(req.body);
+    const citas = req.body;
+    const hospital = {};
+    let propiedad = "";
+    if (Array.isArray(citas)) {
+      citas.forEach((cita) => {
+        propiedad = `${cita.numeroPaciente.codigoEstablecimiento}`;
+        hospital[propiedad] = 1;
+        cita.numeroPaciente.hospital = hospital;
+      });
+    } else {
+      //Sólo un objeto
+      propiedad = `${citas.numeroPaciente.codigoEstablecimiento}`;
+      hospital[propiedad] = 1;
+      citas.numeroPaciente.hospital = hospital;
+    }
+    await CitasPacientes.create(citas);
     res.sendStatus(201);
   } catch (error) {
     res.status(500).send(`Citas Pacientes: ${error.name} - ${error.message}`);
@@ -54,9 +65,7 @@ exports.update = async (req, res) => {
       blockedAt,
       alta,
     };
-    await CitasPacientes.updateOne(filtro,
-      modificacionesCita
-    ).exec();
+    await CitasPacientes.updateOne(filtro, modificacionesCita).exec();
     res.sendStatus(204);
   } catch (error) {
     res.status(500).send(`Citas Pacientes: ${error.name} - ${error.message}`);
