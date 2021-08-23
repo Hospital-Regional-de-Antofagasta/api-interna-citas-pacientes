@@ -4,7 +4,6 @@ exports.getSolicitudesAnularCambiarCitasPacientes = async (req, res) => {
   try {
     const solicitudesAnularCambiarCitasPacientes =
       await SolicitudesAnularCambiarCitasPacientes.find({
-        'numeroPaciente.codigoEstablecimiento': req.params.codigoEstablecimiento,
         enviadaHospital: false,
       })
         .sort({ createdAt: 1 })

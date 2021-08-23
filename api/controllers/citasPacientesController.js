@@ -2,9 +2,7 @@ const CitasPacientes = require("../models/CitasPacientes");
 
 exports.getLast = async (req, res) => {
   try {
-    const citaPaciente = await CitasPacientes.findOne({
-      "numeroPaciente.codigoEstablecimiento": req.params.codigoEstablecimiento,
-    })
+    const citaPaciente = await CitasPacientes.findOne()
       .sort({ correlativoCita: -1 })
       .exec();
     res.status(200).send(citaPaciente);
@@ -16,20 +14,6 @@ exports.getLast = async (req, res) => {
 exports.create = async (req, res) => {
   try {
     const citas = req.body;
-    const hospital = {};
-    let propiedad = "";
-    if (Array.isArray(citas)) {
-      citas.forEach((cita) => {
-        propiedad = `${cita.numeroPaciente.codigoEstablecimiento}`;
-        hospital[propiedad] = 1;
-        cita.numeroPaciente.hospital = hospital;
-      });
-    } else {
-      //Sólo un objeto
-      propiedad = `${citas.numeroPaciente.codigoEstablecimiento}`;
-      hospital[propiedad] = 1;
-      citas.numeroPaciente.hospital = hospital;
-    }
     await CitasPacientes.create(citas);
     res.sendStatus(201);
   } catch (error) {
@@ -41,7 +25,6 @@ exports.update = async (req, res) => {
   try {
     const filtro = {
       correlativoCita: req.params.correlativoCita,
-      "numeroPaciente.codigoEstablecimiento": req.params.codigoEstablecimiento,
     };
     const {
       nombreLugar,
@@ -76,7 +59,6 @@ exports.delete = async (req, res) => {
   try {
     const filtro = {
       correlativoCita: req.params.correlativoCita,
-      "numeroPaciente.codigoEstablecimiento": req.params.codigoEstablecimiento,
     };
     await CitasPacientes.deleteOne(filtro).exec();
     res.sendStatus(204);

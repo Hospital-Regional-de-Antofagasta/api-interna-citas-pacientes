@@ -9,12 +9,7 @@ const SolicitudesAnularCambiarCitasPacientes = mongoose.model(
         type: Number,
         default: 0,
       },
-      numeroPaciente: {
-        numero: {type: Number, require: true},
-        codigoEstablecimiento: {type: String, require: true},
-        hospital: {},
-        nombreEstablecimiento: String,
-      },
+      numeroPaciente: {type: Number, require: true},
       correlativoCita: Number,
       tipoSolicitud: String,
       motivo: String,

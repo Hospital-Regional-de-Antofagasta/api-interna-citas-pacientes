@@ -4,18 +4,18 @@ const { isAuthenticated } = require("../middleware/auth");
 
 const router = express.Router();
 
-router.get("/ultimo/:codigoEstablecimiento", isAuthenticated, citasPacientesController.getLast);
+router.get("/ultimo/", isAuthenticated, citasPacientesController.getLast);
 
 router.post("", isAuthenticated, citasPacientesController.create);
 
 router.put(
-  "/:codigoEstablecimiento/:correlativoCita",
+  "/:correlativoCita",
   isAuthenticated,
   citasPacientesController.update
 );
 
 router.delete(
-  "/:codigoEstablecimiento/:correlativoCita",
+  "/:correlativoCita",
   isAuthenticated,
   citasPacientesController.delete
 );

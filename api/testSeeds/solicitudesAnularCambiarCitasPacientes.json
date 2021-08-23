@@ -1,15 +1,7 @@
 [
   {
     "correlativoSolicitud": 111,
-    "numeroPaciente": 
-      {
-        "numero": 123,
-        "codigoEstablecimiento": "E01",
-        "hospital": {
-          "E01": 1
-        },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 123,
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -17,15 +9,7 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 
-      {
-        "numero": 123,
-        "codigoEstablecimiento": "E01",
-        "hospital": {
-          "E01": 1
-        },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 123,
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,
@@ -33,15 +17,7 @@
   },
   {
     "correlativoSolicitud": 428,
-    "numeroPaciente": 
-      {
-        "numero": 123,
-        "codigoEstablecimiento": "E01",
-        "hospital": {
-          "E01": 1
-        },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 123,
     "correlativoCita": 1234,
     "tipoSolicitud": "ANULAR",
     "respondida": true,
@@ -49,15 +25,7 @@
   },
   {
     "correlativoSolicitud": 456,
-    "numeroPaciente": 
-      {
-        "numero": 123,
-        "codigoEstablecimiento": "E01",
-        "hospital": {
-          "E01": 1
-        },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 123,
     "correlativoCita": 1234,
     "tipoSolicitud": "CAMBIAR",
     "respondida": true,
@@ -65,15 +33,7 @@
   },
   {
     "correlativoSolicitud": null,
-    "numeroPaciente": 
-      {
-        "numero": 123,
-        "codigoEstablecimiento": "E01",
-        "hospital": {
-          "E01": 1
-        },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 123,
     "correlativoCita": null,
     "tipoSolicitud": "ANULAR",
     "respondida": false,

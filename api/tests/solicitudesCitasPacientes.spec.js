@@ -29,42 +29,36 @@ afterEach(async () => {
 });
 
 describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
-  describe("GET /hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/:codigoEstablecimiento", () => {
+  describe("GET /hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/", () => {
     it("Should not get solicitudes de anular/cambiar citas pacientes no enviadas", async (done) => {
       const response = await request
         .get(
-          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/E01"
+          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/"
         )
         .set("Authorization", "no-token");
-
       expect(response.status).toBe(401);
       expect(response.body.respuesta).toBe("Acceso no autorizado.");
-
       done();
     });
     it("Should get 0 solicitudes de anular/cambiar citas pacientes no enviadas from empty database", async (done) => {
       await SolicitudesAnularCambiarCitasPacientes.deleteMany();
       const response = await request
         .get(
-          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/E01"
+          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/"
         )
         .set("Authorization", token);
-
       expect(response.status).toBe(200);
       expect(response.body).toEqual([]);
-
       done();
     });
     it("Should get solicitudes de anular/cambiar citas pacientes no enviadas", async (done) => {
       const response = await request
         .get(
-          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/E01"
+          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/"
         )
         .set("Authorization", token);
-
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(2);
-
       done();
     });
     it("Should get only 100 solicitudes de anular/cambiar citas pacientes no enviadas", async (done) => {
@@ -74,15 +68,11 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       );
       const response = await request
         .get(
-          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/E01"
+          "/hradb-a-mongodb/citas-pacientes/solicitudes/anular-cambiar/no-enviadas/"
         )
         .set("Authorization", token);
-
-     
-
       expect(response.status).toBe(200);
       expect(response.body.length).toBe(100);
-
       done();
     });
   });
@@ -91,14 +81,7 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       const newSolicitudControl =
         await SolicitudesAnularCambiarCitasPacientes.create({
           correlativoSolicitud: null,
-          numeroPaciente: {
-            numero: 123,
-            codigoEstablecimiento: "E01",
-            hospital: {
-              E01: 1
-            },
-            nombreEstablecimiento: "Hospital Regional de Antofagasta",
-          },
+          numeroPaciente: 123,
           correlativoCita: null,
           tipoSolicitud: "ANULAR",
           respondida: false,
@@ -141,14 +124,7 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       const newSolicitudControl =
         await SolicitudesAnularCambiarCitasPacientes.create({
           correlativoSolicitud: null,
-          numeroPaciente: {
-            numero: 123,
-            codigoEstablecimiento: "E01",
-            hospital: {
-              E01: 1
-            },
-            nombreEstablecimiento: "Hospital Regional de Antofagasta",
-          },
+          numeroPaciente: 123,
           correlativoCita: 456,
           tipoSolicitud: "ANULAR",
           respondida: false,
@@ -201,14 +177,7 @@ describe("Enpoints solicitudes de anular/cambiar citas pacientes", () => {
       const newSolicitudControl =
         await SolicitudesAnularCambiarCitasPacientes.create({
           correlativoSolicitud: null,
-          numeroPaciente: {
-            numero: 123,
-            codigoEstablecimiento: "E01",
-            hospital: {
-              E01: 1
-            },
-            nombreEstablecimiento: "Hospital Regional de Antofagasta",
-          },
+          numeroPaciente: 123,
           correlativoCita: 456,
           tipoSolicitud: "ANULAR",
           respondida: false,

@@ -8,15 +8,7 @@
     "nombreProfesional": "nombreProfesional 1",
     "fechaCitacion": "2021-06-30T11:38:13.570Z",
     "horaCitacion": "11:30",
-    "numeroPaciente": 
-      {
-        "numero": 17,
-        "codigoEstablecimiento": "E01",
-        "hospital": {
-          "E01": 1
-        },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 17,
     "codigoAmbito": "01",
     "tipoCita": "C",
     "alta": null
@@ -30,15 +22,7 @@
     "nombreProfesional": "nombreProfesional 2",
     "fechaCitacion": "2021-07-30T11:38:13.570Z",
     "horaCitacion": "12:30",
-    "numeroPaciente": 
-      {
-        "numero": 18,
-        "codigoEstablecimiento": "E01",
-        "hospital": {
-          "E01": 1
-        },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 18,
     "codigoAmbito": "04",
     "tipoCita": "C",
     "alta": null
@@ -52,15 +36,7 @@
     "nombreProfesional": "nombreProfesional 3",
     "fechaCitacion": "2021-08-30T11:38:13.570Z",
     "horaCitacion": "13:30",
-    "numeroPaciente": 
-      {
-        "numero": 19,
-        "codigoEstablecimiento": "E01",
-        "hospital": {
-          "E01": 1
-        },
-        "nombreEstablecimiento": "Hospital Regional de Antofagasta"
-      },
+    "numeroPaciente": 19,
     "codigoAmbito": "06",
     "tipoCita": "C",
     "alta": null
