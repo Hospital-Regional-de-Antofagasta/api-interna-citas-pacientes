@@ -12,7 +12,7 @@ const token = process.env.HRADB_A_MONGODB_SECRET;
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(
-    `${process.env.MONGO_URI_TEST}solicitudes_citas_pacientes_test`,
+    `${process.env.MONGO_URI}/solicitudes_citas_pacientes_test`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
