@@ -17,16 +17,16 @@ mongoose.connect(connection, {
   useUnifiedTopology: true,
 });
 
+app.get("/hradb-a-mongodb/citas-pacientes/health", (req, res) => {
+  res.status(200).send("ready");
+});
+
 app.use("/hradb-a-mongodb/citas-pacientes", citasPacientes);
 
 app.use(
   "/hradb-a-mongodb/citas-pacientes/solicitudes",
   solicitudesCitasPacientes
 );
-
-app.get("/hradb-a-mongodb/citas-pacientes/health", (req, res) => {
-  res.status(200).send("ready");
-});
 
 if (require.main === module) {
   // true if file is executed
