@@ -2,7 +2,7 @@ const supertest = require("supertest");
 const app = require("../api/app");
 const mongoose = require("mongoose");
 const CitasPacientes = require("../api/models/CitasPacientes");
-const citasPacientesSeeds = require("../tests/testSeeds/citaspacientesSeed.json");
+const citasPacientesSeeds = require("../tests/testSeeds/citasPacientesSeed.json");
 
 const request = supertest(app);
 
