@@ -1,0 +1,44 @@
+[
+  {
+    "correlativoCita": 1,
+    "nombreLugar": "nombreLugar 1",
+    "codigoServicio": "3000-4",
+    "nombreServicio": "nombreServicio 1",
+    "codigoProfesional": "14604071-3",
+    "nombreProfesional": "nombreProfesional 1",
+    "fechaCitacion": "2021-06-30T11:38:13.570Z",
+    "horaCitacion": "11:30",
+    "numeroPaciente": 17,
+    "codigoAmbito": "01",
+    "tipoCita": "C",
+    "alta": null
+  },
+  {
+    "correlativoCita": 2,
+    "nombreLugar": "nombreLugar 2",
+    "codigoServicio": "3000-4",
+    "nombreServicio": "nombreServicio 2",
+    "codigoProfesional": "14604071-3",
+    "nombreProfesional": "nombreProfesional 2",
+    "fechaCitacion": "2021-07-30T11:38:13.570Z",
+    "horaCitacion": "12:30",
+    "numeroPaciente": 18,
+    "codigoAmbito": "04",
+    "tipoCita": "C",
+    "alta": null
+  },
+  {
+    "correlativoCita": 3,
+    "nombreLugar": "nombreLugar 3",
+    "codigoServicio": "3000-4",
+    "nombreServicio": "nombreServicio 3",
+    "codigoProfesional": "14604071-3",
+    "nombreProfesional": "nombreProfesional 3",
+    "fechaCitacion": "2021-08-30T11:38:13.570Z",
+    "horaCitacion": "13:30",
+    "numeroPaciente": 19,
+    "codigoAmbito": "06",
+    "tipoCita": "C",
+    "alta": null
+  }
+]
