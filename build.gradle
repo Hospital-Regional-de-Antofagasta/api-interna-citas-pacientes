@@ -169,7 +169,7 @@ helm {
     charts {
         api {
             chartName = "$project.name"
-            version = "$project.version"
+            version = "$project.versionImg"
             sourceDir = file("$projectDir/helm/$project.name")
         }
     }
