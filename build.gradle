@@ -300,7 +300,7 @@ clean.dependsOn stopMongo
 dockerPush.dependsOn build, gcrLogin
 
 task createNamespace(type:Exec){
-    shouldRunAfter(gcloudGetContextCredentials)
+    shouldRunAfter gcloudGetContextCredentials
     commandLine 'kubectl', 'create','namespace','cl-hra-api'
 
     ignoreExitValue true
