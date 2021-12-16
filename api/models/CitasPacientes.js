@@ -5,26 +5,25 @@ const CitasPacientes = mongoose.model(
   "citas_paciente",
   new Schema(
     {
-      correlativoCita: {
-        type: Number,
-        require: true,
-        unique: true,
-      },
+      correlativo: { type: Number, require: true },
+      codigoLugar: String,
       nombreLugar: String,
       codigoServicio: String,
       nombreServicio: String,
       codigoProfesional: String,
       nombreProfesional: String,
+      tipo: String,
+      codigoAmbito: String,
       fechaCitacion: Date,
       horaCitacion: String,
-      numeroPaciente: {type: Number, require: true},
-      codigoAmbito: String,
-      tipoCita: String,
+      rutPaciente: { type: String, require: true },
       alta: { type: Boolean, default: false },
-      blockedAt: Date,
+      bloqueadaEl: Date,
+      codigoEstablecimiento: String,
+      nombreEstablecimiento: String,
     },
     { timestamps: true }
-  )//.index({'numeroPaciente.numero':1,'numeroPaciente.codigoEstablecimiento':1},{unique: true})
+  )
 );
 
 module.exports = CitasPacientes;

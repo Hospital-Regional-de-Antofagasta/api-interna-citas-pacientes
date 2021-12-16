@@ -1,7 +1,6 @@
 [
   {
-    "_id": "000000000001",
-    "correlativo": 1,
+    "correlativo": 10,
     "codigoLugar": "3000-4",
     "nombreLugar": "nombreLugar 1",
     "codigoServicio": "3000-4",
@@ -19,7 +18,6 @@
     "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
   },
   {
-    "_id": "000000000002",
     "correlativo": 2,
     "codigoLugar": "3000-4",
     "nombreLugar": "nombreLugar 1",
@@ -38,7 +36,7 @@
     "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
   },
   {
-    "_id": "000000000003",
+    "_id": "000000000001",
     "correlativo": 3,
     "codigoLugar": "3000-4",
     "nombreLugar": "nombreLugar 1",
@@ -57,8 +55,7 @@
     "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
   },
   {
-    "_id": "000000000004",
-    "correlativo": 4,
+    "correlativo": 3,
     "codigoLugar": "3000-4",
     "nombreLugar": "nombreLugar 1",
     "codigoServicio": "3000-4",
@@ -66,32 +63,13 @@
     "codigoProfesional": "14604071-3",
     "nombreProfesional": "nombreProfesional 1",
     "tipo": "C",
-    "codigoAmbito": "01",
-    "fechaCitacion": "2021-12-04",
+    "codigoAmbito": "04",
+    "fechaCitacion": "2021-12-03",
     "horaCitacion": "11:30",
-    "rutPaciente": "11111111-1",
+    "rutPaciente": "33333333-3",
     "alta": null,
-    "bloqueadaEl": "2021-12-10",
+    "bloqueadaEl": null,
     "codigoEstablecimiento": "HRA",
     "nombreEstablecimiento": "Hospital Regional Antofagasta Dr. Leonardo Guzmán"
-  },
-  {
-    "_id": "000000000005",
-    "correlativo": 5,
-    "codigoLugar": "3000-4",
-    "nombreLugar": "nombreLugar 1",
-    "codigoServicio": "3000-4",
-    "nombreServicio": "nombreServicio 1",
-    "codigoProfesional": "14604071-3",
-    "nombreProfesional": "nombreProfesional 1",
-    "tipo": "C",
-    "codigoAmbito": "01",
-    "fechaCitacion": "2021-12-05",
-    "horaCitacion": "11:30",
-    "rutPaciente": "11111111-1",
-    "alta": true,
-    "bloqueadaEl": null,
-    "codigoEstablecimiento": "HC",
-    "nombreEstablecimiento": "Hospital Calama"
   }
 ]

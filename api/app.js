@@ -2,8 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
-const citasPacientes = require("./routes/citasPacientes");
-const solicitudesCitasPacientes = require("./routes/solicitudesCitasPacientes");
+const citasPacientesSalida = require("./routes/citasPacientesSalida");
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -17,16 +16,11 @@ mongoose.connect(connection, {
   useUnifiedTopology: true,
 });
 
-app.get("/hradb-a-mongodb/citas-pacientes/health", (req, res) => {
+app.get("/inter-mongo-citas-pacientes/health", (req, res) => {
   res.status(200).send("ready");
 });
 
-app.use("/hradb-a-mongodb/citas-pacientes", citasPacientes);
-
-app.use(
-  "/hradb-a-mongodb/citas-pacientes/solicitudes",
-  solicitudesCitasPacientes
-);
+app.use("/inter-mongo-citas-pacientes/salida", citasPacientesSalida);
 
 if (require.main === module) {
   // true if file is executed
