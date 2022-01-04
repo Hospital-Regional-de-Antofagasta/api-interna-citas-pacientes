@@ -149,7 +149,7 @@ exports.deleteMany = async (req, res) => {
           citasPacientesEliminados.push({
             afectado: identificadorDocumento.correlativo,
             realizado: false,
-            error: `Existen ${citasPacientesMismoIdentificador.length} citas de pacientes con el correlativo ${citaPaciente.correlativo} para el establecimiento ${citaPaciente.codigoEstablecimiento}.`,
+            error: `Existen ${citasPacientesMismoIdentificador.length} citas de pacientes con el correlativo ${identificadorDocumento.correlativo} para el establecimiento ${identificadorDocumento.codigoEstablecimiento}.`,
           });
           continue;
         }
