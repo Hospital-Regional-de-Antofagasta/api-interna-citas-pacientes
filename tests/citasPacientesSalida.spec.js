@@ -184,8 +184,6 @@ describe("Endpoints citasPacientes salida", () => {
 
       const { respuesta } = response.body;
 
-      console.log(respuesta)
-
       expect(respuesta.length).toBe(7);
       expect(respuesta).toEqual([
         {
