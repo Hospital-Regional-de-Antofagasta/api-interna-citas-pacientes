@@ -50,19 +50,23 @@ const citaPacienteActualizar = {
 };
 
 beforeEach(async () => {
-  await mongoose.disconnect();
-  await mongoose.connect(
-    `${process.env.MONGO_URI}/citas_pacientes_salida_test`,
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  );
+  // await mongoose.disconnect();
+  // await mongoose.connect(
+  //   `${process.env.MONGO_URI}/citas_pacientes_salida_test`,
+  //   {
+  //     useNewUrlParser: true,
+  //     useUnifiedTopology: true,
+  //   }
+  // );
   await CitasPacientes.create(citasPacientesSeed);
 });
 
 afterEach(async () => {
   await CitasPacientes.deleteMany();
+  // await mongoose.disconnect();
+});
+
+afterAll(async () => {
   await mongoose.disconnect();
 });
 
@@ -207,7 +211,7 @@ describe("Endpoints citasPacientes salida", () => {
         {
           afectado: 16,
           realizado: false,
-          error: "MongoServerError - E11000 duplicate key error collection: citas_pacientes_salida_test.citas_pacientes index: _id_ dup key: { _id: ObjectId('303030303030303030303031') }",
+          error: "MongoServerError - E11000 duplicate key error collection: hrapp_citas_pacientes_test.citas_pacientes index: _id_ dup key: { _id: ObjectId('303030303030303030303031') }",
         },
         {
           afectado: 15,
