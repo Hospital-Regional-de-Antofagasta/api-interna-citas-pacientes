@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+const db = process.env.DB;
+
+const oldDB = mongoose.connection.useDb(db);
+
 const CitasPacientes = mongoose.model(
   "citas_paciente",
   new Schema(
