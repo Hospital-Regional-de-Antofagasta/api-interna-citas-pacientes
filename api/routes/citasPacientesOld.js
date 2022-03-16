@@ -1,6 +1,6 @@
 const express = require("express");
-const citasPacientesController = require("../controllers/citasPacientesController");
-const { isAuthenticated } = require("../middleware/auth");
+const citasPacientesController = require("../controllers/citasPacientesOldController");
+const { isAuthenticated } = require("../middleware/authOld");
 
 const router = express.Router();
 

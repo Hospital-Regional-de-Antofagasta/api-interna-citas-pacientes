@@ -1,24 +1,28 @@
 const supertest = require("supertest");
 const app = require("../api/app");
 const mongoose = require("mongoose");
-const CitasPacientes = require("../api/models/CitasPacientes");
-const citasPacientesSeeds = require("../tests/testSeeds/citasPacientesSeed.json");
+const CitasPacientes = require("../api/models/CitasPacientesOld");
+const citasPacientesSeeds = require("../tests/testSeeds/citasPacientesOldSeed.json");
 
 const request = supertest(app);
 
 const token = process.env.HRADB_A_MONGODB_SECRET;
 
 beforeEach(async () => {
-  await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI}/citas_pacientes_test`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  // await mongoose.disconnect();
+  // await mongoose.connect(`${process.env.MONGO_URI}/citas_pacientes_old_test`, {
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true,
+  // });
   await CitasPacientes.create(citasPacientesSeeds);
 });
 
 afterEach(async () => {
   await CitasPacientes.deleteMany();
+  // await mongoose.disconnect();
+});
+
+afterAll(async () => {
   await mongoose.disconnect();
 });
 

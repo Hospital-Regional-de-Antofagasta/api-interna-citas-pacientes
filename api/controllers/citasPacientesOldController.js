@@ -1,4 +1,4 @@
-const CitasPacientes = require("../models/CitasPacientes");
+const CitasPacientes = require("../models/CitasPacientesOld");
 
 exports.getLast = async (req, res) => {
   try {

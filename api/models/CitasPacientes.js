@@ -1,30 +1,37 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const CitasPacientes = mongoose.model(
+const env = process.env.NODE_ENV;
+
+let db = "hrapp_citas_pacientes";
+
+if (env === "test") db = `${db}_test`;
+
+const conection = mongoose.connection.useDb(db);
+
+const CitasPacientes = conection.model(
   "citas_paciente",
   new Schema(
     {
-      correlativoCita: {
-        type: Number,
-        require: true,
-        unique: true,
-      },
+      correlativo: { type: Number, required: true },
+      codigoLugar: { type: String, required: true },
       nombreLugar: String,
-      codigoServicio: String,
+      codigoServicio: { type: String, required: true },
       nombreServicio: String,
-      codigoProfesional: String,
+      codigoProfesional: { type: String, required: true },
       nombreProfesional: String,
-      fechaCitacion: Date,
-      horaCitacion: String,
-      numeroPaciente: {type: Number, require: true},
-      codigoAmbito: String,
-      tipoCita: String,
+      tipo: { type: String, required: true },
+      codigoAmbito: { type: String, required: true },
+      fechaCitacion: { type: Date, required: true },
+      horaCitacion: { type: String, required: true },
+      rutPaciente: { type: String, required: true },
       alta: { type: Boolean, default: false },
-      blockedAt: Date,
+      bloqueadaEl: Date,
+      codigoEstablecimiento: { type: String, required: true },
+      nombreEstablecimiento: { type: String, required: true },
     },
     { timestamps: true }
-  )//.index({'numeroPaciente.numero':1,'numeroPaciente.codigoEstablecimiento':1},{unique: true})
+  )
 );
 
 module.exports = CitasPacientes;
