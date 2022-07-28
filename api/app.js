@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 const citasPacientesSalida = require("./routes/citasPacientesSalida");
-const citasPacientes = require("./routes/citasPacientesOld");
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -22,8 +21,6 @@ app.get("/inter-mongo-citas-pacientes/health", (req, res) => {
 });
 
 app.use("/inter-mongo-citas-pacientes/salida", citasPacientesSalida);
-
-app.use("/hradb-a-mongodb/citas-pacientes", citasPacientes);
 
 if (require.main === module) {
   // true if file is executed
